@@ -1,1 +1,1 @@
-## Experiment name
+## Whitworth Mechanism
