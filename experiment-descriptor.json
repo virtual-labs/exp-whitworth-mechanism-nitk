@@ -36,13 +36,6 @@
       "content-type": "simulation"
     },
     {
-      "target": "posttest.html",
-      "source": "posttest.json",
-      "label": "Quiz",
-      "unit-type": "task",
-      "content-type": "assesment"
-    },
-    {
       "target": "videos.html",
       "source": "videos.md",
       "label": "Videos",
