@@ -365,3 +365,10 @@ h1 {
 .control-sections {
   height: 100%;
 }
+
+#datatable1,
+#datatable2 {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 0.2rem;
+}
