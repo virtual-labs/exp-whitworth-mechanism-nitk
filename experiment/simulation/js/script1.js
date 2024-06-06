@@ -98,21 +98,21 @@ function trythis()
 
 //change simulation specific css content. e.g. padding on top of variable to adjust appearance in variables window
 function editcss() {
-  // $(".variable").css("padding", "30px");
-  // $("#datatable1").css("position", "absolute");
-  // $("#datatable1").css("left", "450px");
-  // $("#datatable1").css("top", "150px");
-  // $("#datatable1").css("fontSize", "12px");
-  // $("#datatable1").css("font", '"Nunito", sans-serif');
-  // $("#datatable1").css("border", "1px solid black");
-  // $("#datatable2").css("position", "absolute");
-  // $("#datatable2").css("left", "450px");
-  // $("#datatable2").css("top", "150px");
-  // $("#datatable2").css("fontSize", "12px");
-  // $("#datatable2").css("border", "1px solid black");
-  // $("#scale").css("position", "absolute");
-  // $("#scale").css("left", "240px");
-  // $("#scale").css("top", "300px");
+  $(".variable").css("padding", "30px");
+  $("#datatable1").css("position", "absolute");
+  $("#datatable1").css("left", "450px");
+  $("#datatable1").css("top", "150px");
+  $("#datatable1").css("fontSize", "12px");
+  $("#datatable1").css("font", '"Nunito", sans-serif');
+  $("#datatable1").css("border", "1px solid black");
+  $("#datatable2").css("position", "absolute");
+  $("#datatable2").css("left", "450px");
+  $("#datatable2").css("top", "150px");
+  $("#datatable2").css("fontSize", "12px");
+  $("#datatable2").css("border", "1px solid black");
+  $("#scale").css("position", "absolute");
+  $("#scale").css("left", "240px");
+  $("#scale").css("top", "300px");
   //$('#scale').css('position','absolute');
 }
 
