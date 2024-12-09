@@ -90,7 +90,7 @@ var pty = [];
 var utx = [];
 var uty = [];
 var trace = false;
-const rotationButton = document.getElementById('rotationbutton');
+const rotationButton = document.getElementById("rotationbutton");
 
 /*
 function trythis()
@@ -136,8 +136,7 @@ function simstate() {
     pauseTime = setInterval("varupdate();", "100");
     document.querySelector(".playPause").textContent = "Play";
     document.querySelector(".playPause").textContent = "Play";
-    rotationButton.classList.add('disabled');
-    console.log("disable")
+    rotationButton.classList.add("disabled");
   }
   if (imgfilename == "blueplaydull") {
     time = 0;
@@ -146,8 +145,7 @@ function simstate() {
     simTimeId = setInterval("time=time+0.1; varupdate(); ", "100");
     simstatus = 0;
     document.querySelector(".playPause").textContent = "Pause";
-    rotationButton.classList.remove('disabled');
-    console.log("enable");
+    rotationButton.classList.remove("disabled");
   }
 }
 
@@ -458,14 +456,29 @@ ay.xcoord=ac.xcoord-0.1*axy_c*Math.cos(rad(180-BAC));
 ay.ycoord=ac.ycoord+0.1*axy_c*Math.sin(rad(180-BAC));*/
   //alert(vbc);
   if (screenchanges == 0) {
+    enableNextButton();
     draw();
   }
   if (screenchanges == 1) {
+    enableNextButton();
     drawvel(ctx);
   }
   if (screenchanges == 2) {
+    disableNextButton();
     drawacc(ctx);
   }
+}
+
+function disableNextButton() {
+  document.querySelector("#screenchangesforward").classList.add("disabled");
+  document.querySelector(
+    ".prevNextSpan"
+  ).innerHTML = `Prev/<span class='disabled-color'>Next</span>`;
+}
+
+function enableNextButton() {
+  document.querySelector("#screenchangesforward").classList.remove("disabled");
+  document.querySelector(".prevNextSpan").innerHTML = `Prev/Next`;
 }
 
 function tacc(ctx) {

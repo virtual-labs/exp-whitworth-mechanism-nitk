@@ -49,17 +49,17 @@
   </head>
 
   <body onload="startsim();varinit();">
-    <div class="title-div-container">
-      <div class="title-div">
-        <div class="logo-div">
-          <a href="#"
-            ><img src="images/logo_nitk.png" alt="Logo" class="logo"
-          /></a>
-        </div>
-        <h1>Whitworth Mechanism</h1>
-      </div>
-    </div>
     <div class="container">
+      <div class="title-div-container">
+        <div class="title-div">
+          <div class="logo-div">
+            <a href="#"
+              ><img src="images/logo_nitk.png" alt="Logo" class="logo"
+            /></a>
+          </div>
+          <h1>Whitworth Mechanism</h1>
+        </div>
+      </div>
       <div class="sidebar">
         <ul class="tool-menu">
           <li class="tool-list">
@@ -125,7 +125,7 @@
                 class="icons"
               />
             </div>
-            <span>Prev/Next</span>
+            <span class="prevNextSpan">Prev/Next</span>
           </li>
 
           <li class="tool-list" title="Rotate">
@@ -159,10 +159,10 @@
               <div id="canvas-container">
                 <canvas id="simscreen" height="400px" width="550px"></canvas>
               </div>
-             
+
+              <div id="scale"></div>
               <div id="datatable1"></div>
               <div id="datatable2"></div>
-              <div id="scale"></div>
 
               <!-- Region for comment / question prompts -->
               <div id="commentboxleft"></div>
@@ -176,7 +176,12 @@
                 <div class="var-div">
                   <div class="input-container">
                     <label for="ABspinner">AB</label>
-                    <input class="var-spinner" type="number" id="ABspinner" name="value" />
+                    <input
+                      class="var-spinner"
+                      type="number"
+                      id="ABspinner"
+                      name="value"
+                    />
                     <span>mm</span>
                   </div>
                   <div class="var-slider" id="ABslider"></div>
@@ -184,7 +189,12 @@
                 <div class="var-div">
                   <div class="input-container">
                     <label for="crankspinner">BC</label>
-                    <input class="var-spinner" type="number" id="crankspinner" name="value" />
+                    <input
+                      class="var-spinner"
+                      type="number"
+                      id="crankspinner"
+                      name="value"
+                    />
                     <span>mm</span>
                   </div>
                   <div class="var-slider" id="crankslider"></div>
@@ -192,17 +202,25 @@
                 <div class="var-div">
                   <div class="input-container">
                     <label for="alphaspinner">&alpha;</label>
-                    <input class="var-spinner" type="number" id="alphaspinner" name="value" />
+                    <input
+                      class="var-spinner"
+                      type="number"
+                      id="alphaspinner"
+                      name="value"
+                    />
                     <span>&deg;</span>
                   </div>
                   <div class="var-slider" id="alphaslider"></div>
                 </div>
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="omega2spinner" type="number">&omega;<sub>2</sub></label>
+                    <label for="omega2spinner" type="number"
+                      >&omega;<sub>2</sub></label
+                    >
                     <input
                       class="var-spinner"
-                      id="omega2spinner" type="number"
+                      id="omega2spinner"
+                      type="number"
                       name="value"
                     />
                     <span>rad/s</span>
